@@ -62,9 +62,14 @@ def get_pet_labels(image_dir):
            #          accessed by in_files[idx]. Be certain to place the
            #          extracted dog breed name in the variable pet_label
            #          that's created as an empty string ABOVE
-           breed_name_end = in_files[idx].rfind('_') 
-           breed_name = in_files[idx][0:breed_name_end]
-           pet_label = breed_name.replace('_', ' ').lower()           
+           
+           lower_file_name = in_files[idx].lower()
+           file_name = lower_file_name.split('.jpg')[0]
+           breed_name = file_name.split('_')
+           for word in breed_name:
+               if (word.isalpha()):
+                   pet_label += word + " "  
+           pet_label = pet_label.strip()           
            # If filename doesn't already exist in dictionary add it and it's
            # pet label - otherwise print an error message because indicates
            # duplicate files (filenames)
