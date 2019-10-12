@@ -46,7 +46,7 @@ def get_input_args():
 
     parser.add_argument('--dir', type=str, default='pet_images/',
                         help='path to folder of images')
-    parser.add_argument('--arch', default = 'vgg16' )
+    parser.add_argument('--arch', default = 'vgg' )
     parser.add_argument('--dogfile', default = 'dognames.txt' )
 
     return parser.parse_args() 
