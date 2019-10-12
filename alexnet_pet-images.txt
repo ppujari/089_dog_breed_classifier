@@ -311,7 +311,7 @@ PetLabelDog: 1  ClassLabelDog: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
@@ -325,7 +325,15 @@ N Not-Dog Images  10
  
 key  pct_match value  75.0
 key  pct_correct_dogs value  100.0
-key  pct_correct_breed value  100.0
+key  pct_correct_breed value  80.0
 key  pct_correct_notdogs value  100.0
+
+INCORRECT Dog Breed Assignment:
+Real:                     beagle   Classifier:  walker hound, walker foxhound
+Real:             boston terrier   Classifier:                        basenji
+Real:                     beagle   Classifier:               english foxhound
+Real:           golden retriever   Classifier:                tibetan mastiff
+Real:             great pyrenees   Classifier:                         kuvasz
+Real:           golden retriever   Classifier:           afghan hound, afghan
 
 ** Total Elapsed Runtime: 0:0:2
